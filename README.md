@@ -1,6 +1,9 @@
 # CPAN212_FinalProject
 # Gabriela Gorzoni de Souza - N01484951
 
+# Code Climate
+<a href="https://codeclimate.com/github/gabigorzoni/CPAN212_FinalProject/maintainability"><img src="https://api.codeclimate.com/v1/badges/f03b6ac0f4259097cc6f/maintainability" /></a>
+
 # Trip Planner App
 - Trip Planner is an application that allows users to conveniently and efficiently plan their trips.
 
