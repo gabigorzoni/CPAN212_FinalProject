@@ -1,0 +1,17 @@
+<button >
+    <a href="/api/trips""> Trips </a>
+ </button>
+  <button >
+   <a href="/api/trips/new">Add a new trip</a>
+ </button>
+
+ <% if (user) { %>
+    Hello! <%= user.username %>
+    <button >
+    <a href="/logout""> logout </a>
+    </button>
+    <% } else { %>
+    <button >
+    <a href="/login""> login </a>
+    </button>
+<% } %>

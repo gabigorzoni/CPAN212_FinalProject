@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add a New Trip</title>
+</head>
+<body>
+  <h1>Create a new trip!</h1>
+  <br>
+
+  <form action="/api/trips" method="POST" class="add-trip-form">
+
+    <label for="destination">Destination: </label>
+    <input type="text" name="destination" id="destination" required />
+    <br>
+
+    <label for="startDate">Start Date: </label>
+    <input type="date" name="startDate" id="startDate" required />
+    <br>
+
+    <label for="endDate">End Date: </label>
+    <input type="date" name="endDate" id="endDate" required />
+    <br>
+
+    <label for="description">Description: </label>
+    <textarea name="description" id="description" rows="4" cols="50"></textarea>
+    <br>
+
+    <label for="budget">Budget: </label>
+    <input type="number" name="budget" id="budget" required />
+    <br>
+
+    <label for="activities">Activities (comma-separated): </label>
+    <textarea type="text" name="activities" id="activities" rows="4" cols="50" required></textarea>
+    <br>
+
+    <input type="submit" value="Add a New Trip!" />
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trips List</title>
+</head>
+<body>
+  <ul>
+    <% trips.forEach(trip => { %>
+      <li>
+        <a href="/trips/<%= trip._id %>"><%= trip.title %></a>
+      </li>
+    <% }); %>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trip Details</title>
+</head>
+<body>
+  <h2><%= trip.title %></h2>
+  <p>Destination: <%= trip.location %></p>
+  <p>Date: <%= trip.date %></p>
+  <p>Description: <%= trip.description %></p>
+  <p>Budget: <%= trip.budget %></p>
+
+
+  <% if (trip.activities.length > 0) { %>
+    <h3>Activities</h3>
+    <ul>
+      <% trip.activities.forEach(activity => { %>
+        <li>
+          <%= activity.name %> - <%= activity.duration %> hours
+        </li>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p>Any activity registered for this trip.</p>
+  <% } %>
+
+  <a href="/trips">Back to trips list</a>
+
+</body>
+</html>
